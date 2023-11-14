@@ -8,7 +8,10 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/todo', [TodoappFormController::class, 'index']);
-Route::get('/create-page', 'TodoappFormController::@createPage');
-Route::post('/create', 'TodolistFormController@create');
-
+Route::get('/', [TodoappFormController::class, 'index']);
+Route::get('/create-page', [TodoappFormController::class, 'createPage']);
+Route::post('/create', [TodoappFormController::class, 'create']);
+Route::get('/edit-page/{id}', [TodoappFormController::class, 'editPage']);
+Route::post('/edit', [TodoappFormController::class, 'edit']);
+Route::get('/delete-page/{id}', [TodoappFormController::class, 'deletePage']);
+Route::post('/delete/{id}', [TodoappFormController::class, 'delete']);
