@@ -14,4 +14,4 @@ Route::post('/create', [TodoappFormController::class, 'create']);
 Route::get('/edit-page/{id}', [TodoappFormController::class, 'editPage']);
 Route::post('/edit', [TodoappFormController::class, 'edit']);
 Route::get('/delete-page/{id}', [TodoappFormController::class, 'deletePage']);
-Route::post('/delete/{id}', [TodoappFormController::class, 'delete']);
+Route::get('/delete/{id}', [TodoappFormController::class, 'delete']);

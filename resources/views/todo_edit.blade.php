@@ -17,6 +17,6 @@
             見積時間(h) ：<input type="number" name="estimate_hour" value="{{$todo->estimate_hour}}">
         </p>
         <input type="submit" name="edit" value="修正">
-     </form>
-     <a href="/">戻る</a>
- </div>
+    </form>
+    <a href="/">戻る</a>
+</div>

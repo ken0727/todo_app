@@ -1,4 +1,7 @@
-<h1>ToDo List</h1>                                                                                                 
+<h1>ToDo List</h1>
+
+@include("_form")
+
 <div>
     <h2>タスクの一覧</h2>
     <a href="/create-page">タスクを追加</a>
@@ -17,7 +20,7 @@
             <td>{{$todo->assign_person_name}}</td>
             <td>{{$todo->estimate_hour}}</td>
             <td><a href="/edit-page/{{$todo->id}}">編集</a></td>
-            <td><a href="/delete-page/{{$todo->id}}">削除</a></td>
+            <td><a href="/delete/{{$todo->id}}">削除</a></td>
         </tr>
         @endforeach
     </table>
